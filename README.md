@@ -34,3 +34,4 @@
 - **Performance Chart**: Line chart showing stock performance.
 - **Metrics Table**: Displays CAGR, volatility, Sharpe ratio, and max drawdown.
 - **Investment Allocation**: Breakdown of the recommended investment per stock.
+
