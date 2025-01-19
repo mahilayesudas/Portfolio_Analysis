@@ -10,7 +10,7 @@ import datetime as dt
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 # App title
-st.title("Comprehensive Portfolio Analysis")
+st.title("Portfolio Analysis")
 
 # Load ticker data
 @st.cache_data
@@ -110,7 +110,7 @@ else:
     st.empty()
 
     with tab1:
-        st.subheader('Portfolio Performance Over Selected Dates')
+        st.subheader('Portfolio Performance')
         if 'yfdata' in locals() and not yfdata.empty:
             fig = px.line(yfdata, x='Date', y='price_pct', color='ticker', markers=True)
             fig.add_hline(y=0, line_dash="dash", line_color="white")
